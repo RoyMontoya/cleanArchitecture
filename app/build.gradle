@@ -3,7 +3,7 @@ apply from: "${project.rootDir}/QA/quality.gradle"
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.kodelabs.boilerplate"
@@ -24,15 +24,15 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // general
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.jakewharton.timber:timber:4.1.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.jakewharton:butterknife:8.7.0'
+    compile 'com.jakewharton.timber:timber:4.5.1'
 
     // network
-    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
 
     // tests
     testCompile 'junit:junit:4.12'
-    testCompile "org.mockito:mockito-core:1.+"
+    testCompile "org.mockito:mockito-core:2.11.0"
 }
